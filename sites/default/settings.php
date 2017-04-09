@@ -295,7 +295,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'MYxRu2-t8o73Iz6Uw6K6pBYWM3sZAGTsSajkyo70p6tEnKok59yv183L7Udd9B2zK5KqX_DAIg';
 
 /**
  * Deployment identifier.
@@ -763,3 +763,15 @@ $settings['file_scan_ignore_directories'] = [
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'drupalverse',
+  'username' => 'drupaladmin',
+  'password' => 'virtual786',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/files/config_YWu1IV3uWjG5vnPeNVDpGNJRrkjXk7DqsQEUoscodhhlr3uBGxcQ8nf5I4TdUmMsspLhe3ooeQ/sync';
